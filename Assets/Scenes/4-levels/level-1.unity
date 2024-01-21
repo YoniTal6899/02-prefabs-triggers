@@ -1079,6 +1079,7 @@ GameObject:
   - component: {fileID: 1363711266115913}
   - component: {fileID: 1363711266115910}
   - component: {fileID: 1363711266115911}
+  - component: {fileID: 212522841112678494}
   m_Layer: 0
   m_Name: PlayerSpaceship
   m_TagString: Player
@@ -1190,9 +1191,11 @@ MonoBehaviour:
       m_Action: Spawn
       m_Flags: 0
     m_Flags: 0
-  prefabToSpawn: {fileID: 206225842732292031, guid: 1064f1e6fd4430a48ae8a63513c527b4,
-    type: 3}
+  lasers:
+  - {fileID: 206225842732292031, guid: 1064f1e6fd4430a48ae8a63513c527b4, type: 3}
+  - {fileID: 206225842732292031, guid: a696eac0493b9d24d9a3a19f66947e8f, type: 3}
   velocityOfSpawnedObject: {x: 0, y: 10, z: 0}
+  spawnDelay: 3
   scoreField: {fileID: 1811610590}
 --- !u!114 &1363711266115913
 MonoBehaviour:
@@ -1296,6 +1299,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &212522841112678494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363711266115907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3460ad62ce8a39e47a75c13b362f00d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8392271928369018371
 PrefabInstance:
   m_ObjectHideFlags: 0
