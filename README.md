@@ -1,42 +1,48 @@
-# Unity week 2: Formal elements
+# Spaceship Game Improvement
 
-A project with step-by-step scenes illustrating some of the formal elements of game development in Unity, including: 
+## Overview
 
-* Prefabs for instantiating new objects;
-* Colliders for triggering outcomes of actions;
-* Coroutines for setting time-based rules.
+This enhancement introduces new features to the existing spaceship game, enhancing the player experience and adding strategic elements to the gameplay. The game, reminiscent of Chicken Invaders but with a more basic structure, now includes an additional fire type and introduces a shot delay mechanism.
 
-Text explanations are available 
-[here](https://github.com/gamedev-at-ariel/gamedev-5782) in folder 04.
+## Changes Made
 
-## Cloning
-To clone the project, you may need to install git lfs first (if it is not already installed):
+### New Fire Type: Super Laser
 
-    git lfs install 
+- **Description:**
+  - Players now have access to a new fire type called "Super Laser."
+  - This powerful laser is activated after every five shots.
+  - The Super Laser awards players 10 points for each hit, doubling the usual 5 points earned with the standard laser.
 
-To clone faster, you can limit the depth to 1 like this:
+- **How to Activate:**
+  - After firing the standard laser five times in a row, the Super Laser becomes active for the next shot.
+  - A counter keeps track of shots, ensuring that players are rewarded for their skill and accuracy.
 
-    git clone --depth=1 https://github.com/<repository-name>.git
+### Shot Delay Mechanism
 
-When you first open this project, you may not see the text in the score field.
-This is because `TextMeshPro` is not in the project.
-The Unity Editor should hopefully prompt you to import TextMeshPro;
-once you do this, re-open the scenes, and you should be able to see the texts.
+- **Description:**
+  - A shot delay of 2 seconds has been introduced to add a strategic element to the gameplay.
+  - After each shot, there is a brief pause before the player can fire again.
+  - This delay encourages players to time their shots more effectively, promoting a balanced and engaging gaming experience.
 
+## Points System
 
+- **Standard Laser:**
+  - Each hit with the standard laser awards players 5 points.
 
-## Credits
+- **Super Laser:**
+  - Activating and using the Super Laser rewards players with 10 points per hit.
 
-Programming:
-* Maoz Grossman
-* Erel Segal-Halevi
+## How to Play
 
-Online courses:
-* [The Ultimate Guide to Game Development with Unity 2019](https://www.udemy.com/the-ultimate-guide-to-game-development-with-unity/), by Jonathan Weinberger
+1. **Moving:**
+   - Use the arrowas to move, space to shoot.
 
-Graphics:
-* [Matt Whitehead](https://ccsearch.creativecommons.org/photos/7fd4a37b-8d1a-4d4c-80a2-4ca4a3839941)
-* [Kenney's space kit](https://kenney.nl/assets/space-kit)
-* [Ductman's 2D Animated Spacehips](https://assetstore.unity.com/packages/2d/characters/2d-animated-spaceships-96852)
-* [Franc from the Noun Project](https://commons.wikimedia.org/w/index.php?curid=64661575)
-* [Greek-arrow-animated.gif by Andrikkos is licensed under CC BY-SA 3.0](https://search.creativecommons.org/photos/2db102af-80d0-4ec8-9171-1ac77d2565ce)
+2. **Super Laser:**
+   - Achieve five consecutive standard laser shots to activate the Super Laser.
+   - Once activated, the next shot will release the powerful Super Laser.
+   - Earn 10 points for each successful hit with the Super Laser.
+
+3. **Shot Delay:**
+   - Be mindful of the shot delay of 2 seconds after each shot.
+   - Use this delay strategically to time your shots and maximize your score.
+
